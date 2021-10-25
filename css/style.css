@@ -1,3 +1,12 @@
+:root
+{
+    --color-1: #316143;
+    --color-2: #428459;
+    --color-3: #51a770;
+    --color-4: #70bb8b;
+    --color-5: #92cca7;
+}
+
 html, body
 {
     margin: 0;
@@ -22,7 +31,7 @@ header
 
 nav
 {
-    background: gray;
+    background: var(--color-2);
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -31,29 +40,42 @@ nav ul
 {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li
 {
     display: block;
-    margin-right: 2em;
-    padding: 4em 2em;
-    color: black;
+    padding: 3ex 2em;
+}
+
+nav ul li a
+{
+    color: var(--color-5);
 }
 
 nav ul li:hover
 {
-    background: black;
-    color: white;
+    background: var(--color-1);
     cursor: pointer;
+}
+
+nav ul li:hover a
+{
+    color: white;
+}
+
+main
+{
+    background: #f5fff5;
+
+.lesson
+{
+    background: #d5dfd5;
 }
 
 footer
 {
     display: flex;
-}
-
-.lesson
-{
-    background: yellow;
 }
