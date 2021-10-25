@@ -9,6 +9,7 @@
     --color-nav-txt: var(--color-footer-txt);
     --color-nav-hover-txt: white;
     --color-main-bg: #f0fff8;
+    --color-contact-bg: #e0f8f0;
 }
 
 html, body
@@ -19,7 +20,8 @@ html, body
 
 body
 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 body>*
@@ -72,7 +74,35 @@ nav ul li:hover a
 
 main
 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "about about . contact"
+                         "articles articles articles articles"
+                         "teaching teaching teaching teaching ";
     background: var(--color-main-bg);
+}
+
+#about
+{
+    grid-area: about;
+}
+
+#contact
+{
+    grid-area: contact;
+    display: block;
+    background: var(--color-contact-bg);
+}
+
+#articles
+{
+    grid-area: articles;
+}
+
+#teaching
+{
+    grid-area: teaching;
 }
 
 h1
