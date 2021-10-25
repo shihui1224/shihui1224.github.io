@@ -1,6 +1,7 @@
 :root
 {
-    --color-nav-hover-bg: #316143;
+    --color-footer-bg: #316143;
+    --color-nav-hover-bg: var(--color-footer-bg);
     --color-2: #3a724e;
     --color-nav-bg: #428459;
     --color-4: #4a9665;
@@ -10,7 +11,8 @@
     --color-h1-txt: #81c499;
     --color-h2-txt: var(--color-h1-txt);
     --color-9: #92cca7;
-    --color-nav-txt: #a3d5b5;
+    --color-footer-txt: #a3d5b5;
+    --color-nav-txt: var(--color-footer-txt)
     --color-nav-hover-txt: white;
     --color-main-bg: #b1dcc1;
     --color-lesson-bg: #9cd1af;
@@ -99,6 +101,6 @@ h2
 footer
 {
     display: flex;
-    background: var(--color-1);
-    color: var(--color-10);
+    background: var(--color-footer-bg);
+    color: var(--color-footer-txt);
 }
