@@ -78,9 +78,11 @@ main
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "about about . contact"
-                         "articles articles articles articles"
-                         "teaching teaching teaching teaching ";
+                         "articles articles articles ."
+                         "teaching teaching teaching .";
+    grid-column-gap: 1em;
     background: var(--color-main-bg);
+    text-align: justify;
 }
 
 #about
@@ -93,6 +95,13 @@ main
     grid-area: contact;
     display: block;
     background: var(--color-contact-bg);
+    padding: 1ex 1em;
+    line-height: 3ex;
+}
+
+#contact div
+{
+    margin: 1ex 0;
 }
 
 #articles
