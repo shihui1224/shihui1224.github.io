@@ -1,8 +1,12 @@
+html, body
+{
+    margin: 0;
+}
+
 body
 {
-    display: grid;
-    margin: 0;
     padding: 4em;
+    display: grid;
 }
 
 header
