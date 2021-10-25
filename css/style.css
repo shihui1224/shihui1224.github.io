@@ -12,10 +12,9 @@
     --color-h2-txt: var(--color-h1-txt);
     --color-9: #92cca7;
     --color-footer-txt: #a3d5b5;
-    --color-nav-txt: var(--color-footer-txt)
+    --color-nav-txt: var(--color-footer-txt);
     --color-nav-hover-txt: white;
-    --color-main-bg: #b1dcc1;
-    --color-lesson-bg: #9cd1af;
+    --color-main-bg: #f0fff8;
 
 }
 
@@ -90,12 +89,12 @@ h1
 
 h2
 {
+    font-size: 0.8em;
     color: var(--color-h2-txt);
 }
 
 .lesson
 {
-    background: var(--color-lesson-bg);
 }
 
 footer
