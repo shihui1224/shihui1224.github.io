@@ -1,10 +1,15 @@
 :root
 {
     --color-1: #316143;
-    --color-2: #428459;
-    --color-3: #51a770;
-    --color-4: #70bb8b;
-    --color-5: #92cca7;
+    --color-2: #3a724e;
+    --color-3: #428459;
+    --color-4: #4a9665;
+    --color-5: #51a770;
+    --color-6: #60b27d;
+    --color-7: #70bb8b;
+    --color-8: #81c499;
+    --color-9: #92cca7;
+    --color-10: #a3d5b5;
 }
 
 html, body
@@ -31,7 +36,7 @@ header
 
 nav
 {
-    background: var(--color-2);
+    background: var(--color-3);
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -52,7 +57,7 @@ nav ul li
 
 nav ul li a
 {
-    color: var(--color-5);
+    color: var(--color-10);
 }
 
 nav ul li:hover
@@ -68,14 +73,22 @@ nav ul li:hover a
 
 main
 {
-    background: #f5fff5;
+    background: var(--color-10);
+}
+
+h1, h2
+{
+    color: var(--color-8);
+}
 
 .lesson
 {
-    background: #d5dfd5;
+    background: var(--color-9);
 }
 
 footer
 {
     display: flex;
+    background: var(--color-1);
+    color: var(--color-10);
 }
