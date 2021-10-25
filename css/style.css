@@ -1,6 +1,8 @@
 body
 {
     display: grid;
+    margin: 0;
+    padding: 4em;
 }
 
 header
@@ -11,16 +13,35 @@ header
 
 nav
 {
-    display: flex;
     background: gray;
 }
 
 nav ul
 {
+    list-style: none;
     display: flex;
+}
+
+nav ul li
+{
+    display: block;
+    margin-right: 2em;
+    padding: 1ex 1em;
+}
+
+nav ul li:hover
+{
+    background: black;
+    color: white;
+    cursor: pointer;
 }
 
 footer
 {
     display: flex;
+}
+
+.lesson
+{
+    background: yellow;
 }
