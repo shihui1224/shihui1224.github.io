@@ -1,0 +1,26 @@
+body
+{
+    display: grid;
+}
+
+header
+{
+    background: black;
+    color: white;
+}
+
+nav
+{
+    display: flex;
+    background: gray;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+footer
+{
+    display: flex;
+}
