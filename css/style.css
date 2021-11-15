@@ -116,7 +116,7 @@ main
 
 h1
 {
-    color: var(--color-h1-txt);
+    /*color: var(--color-h1-txt);*/
 }
 
 h3
